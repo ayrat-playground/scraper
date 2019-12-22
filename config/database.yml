@@ -1,0 +1,16 @@
+test:
+  adapter: postgresql
+  host: localhost
+  username: ayrat
+  database: scraper_test
+  password: postgres
+  encoding: utf8
+  pool: 32
+development:
+  adapter: postgresql
+  host: localhost
+  pool: 32
+  encoding: utf8
+  username: ayrat
+  database: scraper_dev
+  password: postgres

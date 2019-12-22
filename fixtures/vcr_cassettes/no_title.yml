@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://twitter.com/home
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.1
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      cache-control:
+      - no-cache, max-age=300
+      connection:
+      - close
+      content-length:
+      - '112'
+      content-type:
+      - text/html;charset=utf-8
+      date:
+      - Sun, 22 Dec 2019 07:54:15 GMT
+      expires:
+      - Sun, 22 Dec 2019 07:59:15 GMT
+      location:
+      - "/login?redirect_after_login=%2Fhome"
+      server:
+      - tsa_o
+      set-cookie:
+      - fm=0; Max-Age=0; Expires=Sun, 22 Dec 2019 07:54:15 GMT; Path=/; Domain=.twitter.com;
+        Secure; HTTPOnly, _twitter_sess=BAh7CCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCJyAmSxvAToHaWQiJWM3%250AMTQyNTIyNzE3NDc3NzY1NGYyNmIzZTgwZWMxZjJh--fc982ae4b4def4b24f71c9f143869d5c063cf01d;
+        Path=/; Domain=.twitter.com; Secure; HTTPOnly, personalization_id="v1_oQFK92vnCQgTDyR2045cTA==";
+        Max-Age=63072000; Expires=Tue, 21 Dec 2021 07:54:15 GMT; Path=/; Domain=.twitter.com,
+        guest_id=v1%3A157700125506621661; Max-Age=63072000; Expires=Tue, 21 Dec 2021
+        07:54:15 GMT; Path=/; Domain=.twitter.com
+      status:
+      - 302 Found
+      strict-transport-security:
+      - max-age=631138519
+      x-connection-hash:
+      - dc741f3e6045fc4004ac9647d8c6533b
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      x-response-time:
+      - '109'
+      x-transaction:
+      - 00f7be9600a8842a
+      x-twitter-response-tags:
+      - BouncerCompliant
+      x-xss-protection:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: <html><body>You are being <a href="/login?redirect_after_login=%2Fhome">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sun, 22 Dec 2019 07:54:15 GMT
+recorded_with: VCR 5.0.0
